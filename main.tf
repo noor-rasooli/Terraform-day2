@@ -5,7 +5,7 @@ provider "github" {
 resource "github_repository" "day2" {
   name        = var.day2
   description = "Created with Terraform"
-  private     = true
+  visibility     = "private"
 }
 
 variable "day2" {
